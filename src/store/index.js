@@ -1,29 +1,30 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
+import VuexEasyFirestore from "vuex-easy-firestore";
+import { Firebase, initFirebase } from "../config/firebase.js";
+import auth from "./modules/auth.js";
 
-// import example from './module-example'
+Vue.use(Vuex);
 
-Vue.use(Vuex)
+const easyFirestore = VuexEasyFirestore([], {
+  logging: true,
+  FirebaseDependency: Firebase
+});
 
-/*
- * If not building with SSR mode, you can
- * directly export the Store instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Store instance.
- */
+const storeData = {
+  plugins: [easyFirestore],
+  modules: {
+    auth
+  }
+};
 
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      // example
-    },
+const store = new Vuex.Store(storeData);
 
-    // enable strict mode (adds overhead!)
-    // for dev mode only
-    strict: process.env.DEV
-  })
+// initFirebase
+initFirebase().catch(error => {
+  // take user to a page stating an error occurred
+  // (might be a connection error, or the app is open in another tab)
+  console.error(error);
+});
 
-  return Store
-}
+export default store;

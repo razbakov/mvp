@@ -1,10 +1,12 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-white text-black">
         <q-toolbar-title>
           Dashboard
         </q-toolbar-title>
+        <q-btn v-if="!user" color="primary" @click="signInWithGoogle">Sign In</q-btn>
+        <q-btn v-if="user" color="primary" @click="signOut">Sign Out ({{ user.displayName }})</q-btn>
       </q-toolbar>
     </q-header>
 
@@ -15,53 +17,27 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink'
+import * as Firebase from "firebase/app";
 
 export default {
   name: 'MainLayout',
-
-  data () {
-    return {
-      leftDrawerOpen: false,
-      essentialLinks: [
-        {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
-          link: 'https://quasar.dev'
-        },
-        {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
-          link: 'https://github.com/quasarframework'
-        },
-        {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
-        },
-        {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
-        }
-      ]
+  methods: {
+    signInWithGoogle() {
+      const provider = new Firebase.auth.GoogleAuthProvider();
+      provider.addScope("https://www.googleapis.com/auth/userinfo.email");
+      Firebase.auth().signInWithRedirect(provider);
+    },
+    signOut() {
+      Firebase.auth().signOut();
     }
-  }
+  },
+  computed: {
+    loading() {
+      return this.$store.state.auth.loading;
+    },
+    user() {
+      return this.$store.state.auth.user;
+    }
+  },
 }
 </script>

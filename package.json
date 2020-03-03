@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "quasar": "^1.0.0"
+    "firebase": "^7.9.3",
+    "quasar": "^1.0.0",
+    "vuex-easy-firestore": "^1.35.3"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",
