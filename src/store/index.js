@@ -3,10 +3,11 @@ import Vuex from "vuex";
 import VuexEasyFirestore from "vuex-easy-firestore";
 import { Firebase, initFirebase } from "../config/firebase.js";
 import auth from "./modules/auth.js";
+import chat from "./modules/chat.js";
 
 Vue.use(Vuex);
 
-const easyFirestore = VuexEasyFirestore([], {
+const easyFirestore = VuexEasyFirestore([chat], {
   logging: true,
   FirebaseDependency: Firebase
 });

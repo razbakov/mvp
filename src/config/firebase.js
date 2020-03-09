@@ -2,14 +2,13 @@ import * as Firebase from 'firebase/app'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDVkgUO7NYflCEDhEu7OcNVBsluWWIrieY",
-    authDomain: "mvp-app-1142f.firebaseapp.com",
-    databaseURL: "https://mvp-app-1142f.firebaseio.com",
-    projectId: "mvp-app-1142f",
-    storageBucket: "mvp-app-1142f.appspot.com",
-    messagingSenderId: "901639319329",
-    appId: "1:901639319329:web:86b6e37378445bc0ced860",
-    measurementId: "G-96G2Y80SMB"
+  apiKey: "AIzaSyBC17NMLzV-jGn9dMmhjNue603-wY90wp0",
+  authDomain: "test-1afcf.firebaseapp.com",
+  databaseURL: "https://test-1afcf.firebaseio.com",
+  projectId: "test-1afcf",
+  storageBucket: "test-1afcf.appspot.com",
+  messagingSenderId: "86392753836",
+  appId: "1:86392753836:web:e1843db43885738b535909"
 };
 
 function initFirebase () {

@@ -12,12 +12,11 @@ export default {
   mounted() {
     Firebase.auth().onAuthStateChanged(user => {
       this.$store.commit("auth/setUser", user);
-      if (user) {
-        
-      } else {
-        this.$router.replace("/");
-      }
     });
+
+    this.$store
+      .dispatch("chat/openDBChannel")
+      .catch(console.error);
   }
 }
 </script>
