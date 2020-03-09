@@ -2,13 +2,14 @@ import * as Firebase from 'firebase/app'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBC17NMLzV-jGn9dMmhjNue603-wY90wp0",
-  authDomain: "test-1afcf.firebaseapp.com",
-  databaseURL: "https://test-1afcf.firebaseio.com",
-  projectId: "test-1afcf",
-  storageBucket: "test-1afcf.appspot.com",
-  messagingSenderId: "86392753836",
-  appId: "1:86392753836:web:e1843db43885738b535909"
+  apiKey: "AIzaSyBDImn6-YKP4m_GNbvVCaRQKFhn4Mq-w8o",
+  authDomain: "mvp-chat-58ef6.firebaseapp.com",
+  databaseURL: "https://mvp-chat-58ef6.firebaseio.com",
+  projectId: "mvp-chat-58ef6",
+  storageBucket: "mvp-chat-58ef6.appspot.com",
+  messagingSenderId: "271411937408",
+  appId: "1:271411937408:web:ab8557ed64b544ec976665",
+  measurementId: "G-SHEGL7J0G4"
 };
 
 function initFirebase () {
