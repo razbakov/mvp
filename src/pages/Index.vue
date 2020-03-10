@@ -1,5 +1,4 @@
 <template>
-
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar class="bg-white text-black">
@@ -35,7 +34,6 @@
     </q-page-container>
 
     <q-footer class="q-pa-md bg-white">
-
       <q-btn v-if="!user" color="primary" @click="signInWithGoogle">Sign In to chat</q-btn>
       <q-input v-else placeholder="Write a message" v-model="message" @keyup.enter="send" />
     </q-footer>
