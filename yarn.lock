@@ -2170,10 +2170,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base64-js@^1.0.2, base64-js@^1.2.3:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
-  integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
+base64-js@^1.0.2, base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 base@^0.11.1:
   version "0.11.2"
@@ -2898,13 +2898,6 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-compare-anything@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/compare-anything/-/compare-anything-0.1.3.tgz#d41875fa47e9e1f93858e20a2ca72f346387e56b"
-  integrity sha512-9aWSDYhMFBIx9Wh0/wO+bDycqbF1tG/MnviI/3CoPXM4uQTLhWYObeODl/6Y4FCavq7DZeqv/PBn25kx0XW97Q==
-  dependencies:
-    is-what "^3.2.4"
-
 compare-version@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/compare-version/-/compare-version-0.1.2.tgz#0162ec2d9351f5ddd59a9202cba935366a725080"
@@ -3025,13 +3018,6 @@ cookie@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
-
-copy-anything@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/copy-anything/-/copy-anything-1.6.0.tgz#005a70d4b64126880ee4e2d07edc0b15bedf4c56"
-  integrity sha512-ZEEDP2ciuSqBME5PfiiStiv51wdwTMC57c9+a+HWPuvJqR6VjhpaFccNbdzXtQdAfSDIS+ydQe6MTg1gbfDPOA==
-  dependencies:
-    is-what "^3.6.0"
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -4251,13 +4237,6 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
-filter-anything@^1.1.4, filter-anything@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/filter-anything/-/filter-anything-1.1.5.tgz#0a9e68b6e55c2ff3511c6f3eaa9fd3794cfca840"
-  integrity sha512-upMixYadKUG9uTuUDfpy0tlg9VSlyKxuqnNU/GdwIujDxJKSB57YovaBMElRrniOnCjIBJv70QRVvh5Jg3sC2A==
-  dependencies:
-    is-what "^3.4.0"
-
 finalhandler@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
@@ -4270,13 +4249,6 @@ finalhandler@~1.1.2:
     parseurl "~1.3.3"
     statuses "~1.5.0"
     unpipe "~1.0.0"
-
-find-and-replace-anything@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/find-and-replace-anything/-/find-and-replace-anything-2.0.4.tgz#0f4232d754f318e3becb89a1a92130f2008b62d9"
-  integrity sha512-UZyxwBzq1JORKgJshNBw8VfclxFLhXDL5/+JdDGtJEnRKtP/1DpdpQfymXvDdyqx6b1ifxI/fowcrjWi9Id+3g==
-  dependencies:
-    is-what "^3.2.4"
 
 find-babel-config@^1.2.0:
   version "1.2.0"
@@ -4377,14 +4349,6 @@ flatted@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
   integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
-
-flatten-anything@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/flatten-anything/-/flatten-anything-1.4.1.tgz#eb89c356e31db4bf329d91733a30917475be3600"
-  integrity sha512-FWBB52h5ecu5jVv9A8cf6Z5ogXgqedrsfbagpgjO0QhdoayPEu/so2EQCY9QBAunKPYWA/zQaOLn4nYlLzywdg==
-  dependencies:
-    filter-anything "^1.1.4"
-    is-what "^3.3.1"
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -5588,11 +5552,6 @@ is-valid-path@^0.1.1:
   dependencies:
     is-invalid-path "^0.1.0"
 
-is-what@^3.2.4, is-what@^3.3.1, is-what@^3.4.0, is-what@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/is-what/-/is-what-3.6.0.tgz#458f7895d4b2aec4484e2a274dbb8a618eebea04"
-  integrity sha512-2rMAWmuDACWgcy5Cp4eDXHRf4GlNjXKp3e/0etFzE5HZhCgPw8u5zeKDyLIUmtE2GP9mGK3jS7jvXYFc6qk/ZA==
-
 is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
@@ -6194,13 +6153,6 @@ meow@^3.7.0:
     read-pkg-up "^1.0.1"
     redent "^1.0.0"
     trim-newlines "^1.0.0"
-
-merge-anything@^2.4.2, merge-anything@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-2.4.4.tgz#6226b2ac3d3d3fc5fb9e8d23aa400df25f98fdf0"
-  integrity sha512-l5XlriUDJKQT12bH+rVhAHjwIuXWdAIecGwsYjv2LJo+dA1AeRTmeQS+3QBpO6lEthBMDi2IUMpLC1yyRvGlwQ==
-  dependencies:
-    is-what "^3.3.1"
 
 merge-descriptors@1.0.1:
   version "1.0.1"
@@ -7256,13 +7208,12 @@ pkg-up@^3.1.0:
     find-up "^3.0.0"
 
 plist@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
-  integrity sha512-GpgvHHocGRyQm74b6FWEZZVRroHKE1I0/BTjAmySaohK+cUn+hZpbqXkc3KWgW3gQYkqcQej35FohcT0FRlkRQ==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
+  integrity sha512-ksrr8y9+nXOxQB2osVNqrgvX/XQPOXaU4BQMKjYq8PvaY1U18mo+fKgBSwzK+luSyinOuPae956lSVcBwxlAMg==
   dependencies:
-    base64-js "^1.2.3"
+    base64-js "^1.5.1"
     xmlbuilder "^9.0.7"
-    xmldom "0.1.x"
 
 portfinder@^1.0.25:
   version "1.0.25"
@@ -9662,29 +9613,6 @@ vue@2.6.11:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
 
-vuex-easy-access@^3.1.8:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/vuex-easy-access/-/vuex-easy-access-3.1.8.tgz#414a5d8849866e655e6e85acbb433ef002868ce0"
-  integrity sha512-R1+a8aRHZlwZHgabjJ2OBOVJr7ukga0tiKeB22dzED8CVfCqX6Jy48IMknrhqKbiCYa+CGfdHMe8j5Urwijt7g==
-  dependencies:
-    find-and-replace-anything "^2.0.4"
-    is-what "^3.3.1"
-    merge-anything "^2.4.2"
-
-vuex-easy-firestore@^1.35.3:
-  version "1.35.3"
-  resolved "https://registry.yarnpkg.com/vuex-easy-firestore/-/vuex-easy-firestore-1.35.3.tgz#2e52c3c72d1a0acdd352e1b80b45a981fb39e577"
-  integrity sha512-TrxGButW7st7A/R1q6xkfad7J33lzGUknfmYQAgQLSSpevWG2kM//p9Kq7X0duOSsmhYLrEbr2c6kxA+9mcjCA==
-  dependencies:
-    compare-anything "^0.1.3"
-    copy-anything "^1.6.0"
-    filter-anything "^1.1.5"
-    find-and-replace-anything "^2.0.4"
-    flatten-anything "^1.4.1"
-    is-what "^3.6.0"
-    merge-anything "^2.4.4"
-    vuex-easy-access "^3.1.8"
-
 vuex@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.1.2.tgz#a2863f4005aa73f2587e55c3fadf3f01f69c7d4d"
@@ -10108,11 +10036,6 @@ xmlbuilder@^9.0.7:
   version "9.0.7"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
   integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
-
-xmldom@0.1.x:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.31.tgz#b76c9a1bd9f0a9737e5a72dc37231cf38375e2ff"
-  integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
 
 xmlhttprequest@1.8.0:
   version "1.8.0"
